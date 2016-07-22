@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         page2.setWebChromeClient(new WebChromeClient());
         page2.setWebViewClient(new WebViewClient());
         page2.getSettings().setJavaScriptEnabled(true);
-
+        //we add our javascript interface that we will call in the webview using MyInterface
         page2.addJavascriptInterface(new WebAppInterface(page1), "MyInterface");
         page1.loadUrl("file:///android_asset/page1.html");
         page2.loadUrl("file:///android_asset/page2.html");

@@ -4,6 +4,9 @@
 
 <script>
 function sendText(text) {
+//here we call the javascript interface. Android added it to the webview
+// when we called page2.addJavascriptInterface(new WebAppInterface(page1), "MyInterface");
+// in Java
 MyInterface.sendToPage1(document.getElementById('myText').value)
 }
 
