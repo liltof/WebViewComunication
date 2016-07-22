@@ -1,0 +1,15 @@
+<html>
+<head></head>
+<body>
+
+<script>
+function sendText(text) {
+MyInterface.sendToPage1(document.getElementById('myText').value)
+}
+
+</script>
+
+<input type="text" id="myText">
+<input type="button" value="Send to webview1" onClick="sendText()" />
+</body>
+</html>
